@@ -4,37 +4,11 @@ import Image from "next/image";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-interface FAQItemProps {
-  question: string;
-  answer: string;
-}
-
-export const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="border border-white rounded-xl p-6 bg-white/20 text-gray-800 transition-all duration-300">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex justify-between w-full items-center text-left"
-      >
-        {/* Question at ~20px */}
-        <span className="text-[20px] font-semibold">{question}</span>
-        {isOpen ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
-      </button>
-
-      {isOpen && (
-        // Answer at ~20px
-        <div className="mt-4 text-[20px] text-gray-700 transition-opacity duration-300 ease-in">
-          {answer}
-        </div>
-      )}
-    </div>
-  );
-};
+import FAQItem from "@/components/FAQItem";
 
 
-export default function CombinedPage() {
+
+export default function () {
   return (
     <main className="bg-white text-gray-900 scroll-smooth">
       {/* Navbar */}
