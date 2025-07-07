@@ -24,7 +24,7 @@ export default function () {
           muted
           playsInline
         >
-          <source src="/home.mp4" type="video/mp4" />
+          <source src="/Home.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -139,7 +139,7 @@ export default function () {
     muted
     playsInline
   >
-    <source src="/services.mp4" type="video/mp4" />
+    <source src="/Services.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
@@ -229,7 +229,7 @@ export default function () {
     playsInline
     className="absolute inset-0 w-full h-full object-cover z-0"
   >
-    <source src="/contact.mp4" type="video/mp4" />
+    <source src="/Contact.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
@@ -465,7 +465,7 @@ export default function () {
       zIndex: 0,
     }}
   >
-    <source src="/background.mp4" type="video/mp4" />
+    <source src="/Background.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
